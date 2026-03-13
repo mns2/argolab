@@ -1,0 +1,8 @@
+kind: pod
+apiVersion: v1
+metadata:
+  name: demo_test
+spec:
+  containers:
+  - name: demo_test
+    image: nginx:1.14-alpine
