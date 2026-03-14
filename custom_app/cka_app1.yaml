@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cka_app
+  name: cka-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      run: cka_app
+      run: cka-app
   template:
     metadata:
       labels:
-        run: cka_app
+        run: cka-app
     spec:
       containers:
       - image: mshrestha/mns_cka:v4
-        name: cka_app
+        name: cka-app
